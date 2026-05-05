@@ -550,3 +550,8 @@ footer {
     padding: 8px 15px;
     border-radius: 5px;
 }
+.contact-form {
+    align-items: center;
+    max-width: 600px;
+    margin: 30px auto;
+}
