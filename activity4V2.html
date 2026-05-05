@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<title>User Information Form</title>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e3f2fd;
+            padding: 20px;
+        }
+
+        form {
+            background-color: #ffffff;
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #0d47a1;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #90caf9;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button[type="reset"] {
+            background-color: #64b5f6;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        table, td {
+            border: 1px solid #bbdefb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td><label for="fname">First Name:</label></td>
+                <td><input type="text" id="fname" name="firstname" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="Mname">Middle Name:</label></td>
+                <td><input type="text" id="Mname" name="Middle Name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="lname">Last Name:</label></td>
+                <td><input type="text" id="lname" name="lastname" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> Other
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Hobbies:</label></td>
+                <td>
+                    <input type="checkbox"> Gaming <br>
+                    <input type="checkbox"> Biking <br>
+                    <input type="checkbox"> Cooking <br>
+                    <input type="checkbox"> Reading <br>
+                    <input type="checkbox"> Swimming
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="year-level">Year Level:</label></td>
+                <td>
+                    <select id="year-level">
+                        <option>1st Year</option>
+                        <option>2nd Year</option>
+                        <option>3rd Year</option>
+                        <option>4th Year</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="center">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    color: #333;
+    margin: 0;
+    /* Centers the container horizontally and vertically in the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* This class makes the cards sit side-by-side and centers them */
+.container {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;   
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* Centers cards within the container */
+    width: 100%;
+}
+
+.card {
+    border: 2px solid #212d38;
+    background-color: #dfe0e7; 
+    padding: 20px;
+    width: 300px;
+    flex: 0 0 300px; 
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #1a202c;
+}
+
+.input-group {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.input-group label {
+    width: 110px;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 130px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+/* Green pill-shaped buttons */
+.btn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-right: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.output {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 100px;
+}
