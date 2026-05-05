@@ -501,3 +501,52 @@ footer {
 .card-img {
     position: relative;
 }
+/* for the email part */
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+/* sa left na input */
+.form-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+/* sa right na mess */
+.form-right {
+    flex: 1.5;
+}
+
+/* both input and mess */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    
+}
+
+/* dako size */
+.form-right textarea {
+    height: 100%;
+    min-height: 100px;
+}
+/* design^2 */
+.contact-form button {
+    display: block;
+    margin-top: -20px;
+    margin-left: 25px;
+}
+.contact-form button {
+    background: #00adb5;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
